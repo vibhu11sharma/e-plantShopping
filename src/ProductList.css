@@ -234,6 +234,28 @@ body {
         flex-direction: column; /* Change flex direction to stack items vertically */
         align-items: center; /* Align items to the center of the container */
       }
+
+      .product-button:disabled {
+        background-color: gray;
+        color: white;
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+
+.cart {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 14px;
+}
     
       .tag {
         margin-bottom: 20px; /* Add margin bottom for spacing */
@@ -250,3 +272,10 @@ body {
         text-align: center; /* Align text to the center */
       }
   }
+
+  .product-button:disabled {
+    background-color: gray !important;
+    color: white !important;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
